@@ -3,7 +3,7 @@ div.banner-1{
     height: 600px;
     background: #E5E5E5;
     .bg{
-    background-image: url('./Public/Img/Hapo_Learn_banner_1.png');
+    background-image: url('../Public/Img/Hapo_Learn_banner_1.png');
     width: 100%;
     height: 500px;
     }
@@ -16,13 +16,13 @@ div.banner-1{
         position: absolute;
         top: 0;
 
-            span.text1,
-            span.text2,
+            span.text-motto,
+            span.text-add,
             small {
                 display: block;
             }
 
-        span.text1{
+        span.text-motto{
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-style: normal;
             font-weight: normal;
@@ -31,7 +31,7 @@ div.banner-1{
             letter-spacing: -0.05em;
         }
 
-        span.text2{
+        span.text-add{
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-style: normal;
             font-weight: bold;
@@ -40,7 +40,7 @@ div.banner-1{
             color: #11114E;
         }
 
-        span.text3{
+        span.text-time{
             display: inline-block;
             margin-top: 40px;
             padding: 10px 70px;
