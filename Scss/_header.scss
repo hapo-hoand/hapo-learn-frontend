@@ -10,9 +10,16 @@
         font-weight: bold;
     }
 }
+
+.row-header {
+    width: 100%;
+    margin: 0;
+}
+
 ul.menu {
     li.nav-item {
         margin: 0;
+
         a.nav-link {
             border: 0;
             border-radius: 20px;
@@ -23,101 +30,107 @@ ul.menu {
                 color: white;
             }
         }
-    }
-}
 
-
-ul.menu {
-    li.nav-item{
-        a.active{
+        .item-active {
             color: #fff;
             background-color: #B2D235;
         }
-    }   
+    }
 }
 
-@media screen and (max-width: 415px) {
-    .navbar {
-        padding: 0;
-        text-align: center;
-        position: relative;
+@media only screen and (max-width: 990px) {
 
-        .navbar-brand {
-            text-align: center;
-            margin: 0 auto;
-        }
-        .icon-menu {
-            width: 50px;
-            height: 45px;
-            top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-
-            
-            .line {
-                display: inline-block;
-                width: 25px;
-                height: 3px;
-                background-color: black;
-                border-radius: 5px;
-                position: relative;
-
-                &:after{
-                    content: "";
-                    display: block;
-                    width: 25px;
-                    height: 3px;
-                    background-color: black;
-                    border-radius: 5px;
-                    position: absolute;
-                    top: -5px;
-                }
-
-                &:before{
-                    content: "";
-                    display: block;
-                    width: 25px;
-                    height: 3px;
-                    background-color: black;
-                    border-radius: 5px;
-                    position: absolute;
-                    top: 5px;
-                }
-            }
-        }
+    .logo {
+        width: 100%;
 
         img {
-            width: 50%;
-            height: 50%;
+            margin: auto;
+            display: block;
         }
-
-        ul.menu {
-            background-color: #fff;
-            height: calc(100vh - 45px);
-
-            .nav-item {
-                text-align: center;
-                width: 100%;
-                height: auto;
-                display: inline-block;
-                padding: 20px 0px;
-            }
-        }
-
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .logo-hapo {
-       text-align: center;
     }
 
-    .menu {
-        li {
-            margin: 0 10px;
+    .main-menu {
+        width: 100%;
+    }
+
+    ul.menu {
+        display: inline-block;
+        margin-top: 10px;
+        li.nav-item {
+           display: inline-block;
+        }
+        .item {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+
+        .item-active {
+            color: #fff;
         }
     }
 }
 
+@media only screen and (max-width: 414px) {
+    .tbody {
+        height: 100vh;
+        overflow: visible;
+    }
+    .navbar {
+        padding: 0;
+        margin: 0;
+
+        .container {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+    .logo{
+        .btn-menu {
+            display: block;
+            position: absolute;
+            top: 20px;
+            border: 0;
+            outline: 0; 
+            -o-transition-property: none ;
+            -moz-transition-property: none ;
+            -ms-transition-property: none ;
+            -webkit-transition-property: none ;
+            transition-property: none;
+            
+        }
+
+
+        .image {
+            padding: 20px 100px;
+            height: auto;
+        }
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    ul.menu {
+        display:inline-block;
+        height: calc(100vh - 80px);
+        width: 100%;
+        padding-top: 0;
+        margin-top: 0;
+
+        li.nav-item {
+           display: block;
+        }
+        
+        .item {
+            display: block;
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+
+        .item-active {
+            color: #fff;
+        }
+    }
+}

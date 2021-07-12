@@ -1,7 +1,57 @@
-// @import 'body';
+
 // @import 'footer';
 .container-fluid {
     margin: 0;
     padding: 0;
 }
+
+@mixin text-banner-1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    line-height: 60px;
+    font-size: 40px;
+
+}
 @import 'header';
+@import 'body';
+
+div.content,
+.main-content,
+.feed-back {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 10px 45px;
+
+        span.text-motto,
+        span.text-add,
+        small {
+            display: block;
+        }
+
+    span.text-motto {
+        font-weight: normal;
+        letter-spacing: -0.05em;
+        @include text-banner-1();
+    }
+
+    span.text-add {
+        font-weight: bold;
+        color: #11114E;
+        @include text-banner-1();
+
+    }
+
+    span.text-time {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 10px 70px;
+        color: white;
+        background-color: #B2D235;
+        border-radius: 35px;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-weight: bold;
+        text-align: center;
+    }
+}
+@import 'banner-1';

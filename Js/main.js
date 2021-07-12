@@ -1,8 +1,13 @@
-$(".icon-menu").click(function (e) { 
-  console.log($('.menu').css('width'));
-  if ($('.menu').css('width') == '0px') {
-    $('.menu').css('width', '100vw');
-  } else {
-    $('.menu').css('width', '0');
-  }
+
+// $(window).resize(function() {
+//     var width = $(window).width();
+//     if (width > 414){
+//         $(".collapse").addClass('show');
+//     }
+//   });
+
+$(".item").click(function (e) { 
+    e.preventDefault();
+    $(".item").removeClass("item-active");
+    $(this).addClass("item-active")
 });
