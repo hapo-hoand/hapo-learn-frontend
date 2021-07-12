@@ -1,0 +1,74 @@
+div.banner-1 {
+    position: relative;
+    padding-bottom: 100px;
+    background: #E5E5E5;;
+
+    .bg {
+        img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background: transparent;
+        }
+
+    }
+}
+.position {
+    position: absolute;
+    top: 120px;
+}
+div.content {
+    img {
+        // width: 100%;
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    div.content {
+        // padding: 10px 45px 60px 45px;
+
+        span.text-motto {
+            font-size: 30px;
+        }
+
+        span.text-add {
+            font-size: 25px;
+        }
+
+        img {
+            width: 10%;
+            height: 30px;
+        }
+
+        span.text-time {
+            width: 100%;
+        }
+    }
+
+    .position {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.content {
+        // padding: 10px 45px 60px 45px;
+
+        span.text-motto {
+            font-size: 20px;
+        }
+
+        span.text-add {
+            font-size: 15px;
+        }
+
+        img {
+            width: 30px;
+            height: 25px;
+        }
+
+        span.text-time {
+            padding: 10px 20px;
+        }
+    }
+}
