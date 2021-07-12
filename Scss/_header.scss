@@ -10,8 +10,6 @@
 
     }
 
-       
-
     a {
         text-decoration: none;
         color: black;
@@ -20,6 +18,7 @@
         font-weight: bold;
     }
 }
+
 ul.menu {
     li.nav-item {
         margin: 0;
@@ -41,11 +40,13 @@ ul.menu {
         background-color: #B2D235;
     }
 }
+
 .navbar-light 
     .navbar-nav 
         .item-active {
             color: #fff;
 }
+
 @media only screen and (max-width: 414px) {
     .header {
         img {
@@ -56,6 +57,7 @@ ul.menu {
         }
     }
 }
+
 @media only screen and (max-width: 768px) {
     .navbar {
         display: flex;
