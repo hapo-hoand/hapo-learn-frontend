@@ -1,16 +1,13 @@
 @import "variable";
-
-.container-fluid {
-  margin: 0;
-  padding: 0;
-}
-
 @import "header";
 @import "banner-hapo-learn";
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .top-content {
   padding: 70px 0;
-  background-color: #e5e5e5;
+  background-color: $white_color;
 }
 
 @import "content";

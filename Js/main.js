@@ -11,4 +11,3 @@ $(".item").click(function (e) {
     $(".item").removeClass("item-active");
     $(this).addClass("item-active")
 });
-
