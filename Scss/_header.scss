@@ -52,17 +52,6 @@ ul.menu {
   background-color: $white_color;
 }
 
-@media only screen and (max-width: 414px) {
-  .header {
-    img {
-      display: block;
-      width: 150px;
-      height: 30px;
-      margin: 10px auto;
-    }
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .navbar {
     display: flex;
@@ -70,6 +59,17 @@ ul.menu {
     .logo {
       display: block;
       width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .header {
+    img {
+      display: block;
+      width: 150px;
+      height: 30px;
+      margin: 10px auto;
     }
   }
 }
