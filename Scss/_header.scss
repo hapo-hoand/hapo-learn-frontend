@@ -41,8 +41,17 @@ ul.menu {
   }
 }
 
-.navbar-light .navbar-nav .item-active {
-  color: $white_color;
+.navbar-light {
+  .navbar-nav {
+    .item-active {
+      color: $white_color;
+    }
+  }
+}
+
+.top-content {
+  padding: 70px 0;
+  background-color: $gray_color;
 }
 
 @media only screen and (max-width: 414px) {

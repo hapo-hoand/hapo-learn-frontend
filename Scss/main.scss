@@ -5,10 +5,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.top-content {
-  padding: 70px 0;
-  background-color: $white_color;
-}
 
 @import "content";
 @import "banner-lesson";
+@import "feedback";
