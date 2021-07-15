@@ -3,16 +3,16 @@ body {
 }
 
 .navbar {
-  button[aria-expanded="true"] > span.close {
+  button.btn-menu[aria-expanded="true"] > span.close {
     display: inline;
     color: $black_color;
   }
 
-  button[aria-expanded="true"] > span.navbar-toggler-icon {
+  button.btn-menu[aria-expanded="true"] > span.navbar-toggler-icon {
     display: none;
   }
 
-  button[aria-expanded="false"] > span.close {
+  button.btn-menu[aria-expanded="false"] > span.close {
     display: none;
   }
 }
@@ -65,9 +65,7 @@ ul.menu {
   }
 }
 
-.navbar-light 
-.navbar-nav 
-.item-active {
+.navbar-light .navbar-nav .item-active {
   color: $white_color;
 }
 
