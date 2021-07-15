@@ -1,5 +1,23 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: $font_utm;
+}
+
+.navbar{
+  button[aria-expanded="true"] 
+  > span.close {
+    display: inline;
+    color: $black_color;
+  }
+
+  button[aria-expanded="true"] 
+  > span.navbar-toggler-icon {
+    display: none;
+  }
+
+  button[aria-expanded="false"] 
+  > span.close {
+    display: none;
+  }
 }
 
 .header {
@@ -20,6 +38,12 @@ body {
     text-transform: uppercase;
     font-weight: bold;
   }
+}
+
+.btn-menu
+.rotate {
+    transition: 0.5s;
+    transform: rotate(180deg);
 }
 
 ul.menu {
