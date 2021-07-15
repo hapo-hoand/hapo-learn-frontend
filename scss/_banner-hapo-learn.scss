@@ -1,0 +1,136 @@
+@mixin text-banner-hapo {
+  line-height: 60px;
+  font-size: 45px;
+}
+
+div.content {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 10px 30px;
+
+  span.text-motto,
+  span.text-add,
+  small {
+    display: block;
+  }
+
+  small {
+    line-height: 30px;
+    padding: 12px 0;
+  }
+
+  span.text-motto {
+    letter-spacing: -0.05em;
+    @include text-banner-hapo();
+  }
+
+  span.text-add {
+    font-weight: bold;
+    color: $blue_charcoal;
+    @include text-banner-hapo();
+  }
+
+  span.text-time {
+    display: inline-block;
+    padding: 10px 60px;
+    font-size: 25px;
+    color: $white_color;
+    background-color: $warning_color;
+    border-radius: 35px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.banner-hapo-learn {
+  position: relative;
+
+  .bg-img {
+    background-image: url('../Public/Img/Hapo_Learn_banner_1.png');
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.content-banner {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  div.content {
+    padding: 10px;
+    height: 70%;
+
+    span.text-motto,
+    span.text-add {
+      font-size: 29px;
+      line-height: 35px;
+    }
+
+    span.text-time {
+      padding: 7px 33px;
+      font-size: 14px;
+    }
+
+    small {
+      line-height: 20px;
+      padding: 15px 0;
+    }
+  }
+
+  .content-banner {
+    position: absolute;
+
+    img {
+      height: 30px;
+    }
+  }
+
+  .banner-hapo-learn {
+    .bg-img {
+      width: 100%;
+      height: 350px;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .content-banner {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(0deg, $gray_color, $white_color);
+  }
+
+  div.content {
+    span.text-time {
+      display: block;
+      font-size: 18px;
+      padding: 10px 30px;
+    }
+
+    span.text-motto,
+    span.text-add {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+
+  .banner-hapo-learn {
+    .bg-img {
+      height: 200px;
+    }
+  }
+}
