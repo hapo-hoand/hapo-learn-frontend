@@ -19,7 +19,8 @@ body {
 
 .header {
   position: relative;
-
+  z-index: 10;
+  
   .btn-menu {
     position: absolute;
     top: 13px;
@@ -74,6 +75,11 @@ ul.menu {
   background-image: linear-gradient(0deg, $gray_color, $white_color);
 }
 
+.fixed {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
 @media only screen and (max-width: 768px) {
   .navbar {
     display: flex;
@@ -87,6 +93,8 @@ ul.menu {
 
 @media only screen and (max-width: 414px) {
   .header {
+    padding: 0;
+
     img {
       display: block;
       width: 150px;
@@ -97,5 +105,10 @@ ul.menu {
 
   .top-content {
     background-image: linear-gradient(0deg, $gray_color, $gray_color);
+  }
+
+  .fixed {
+    position: fixed;
+    top: 100px;
   }
 }
