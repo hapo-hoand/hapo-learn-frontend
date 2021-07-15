@@ -2,6 +2,10 @@ body {
   font-family: $font_utm;
 }
 
+.custom-menu {
+  position: relative;
+}
+
 .navbar {
   button.btn-menu[aria-expanded="true"] > span.close {
     display: inline;
@@ -107,8 +111,9 @@ ul.menu {
     background-image: linear-gradient(0deg, $gray_color, $gray_color);
   }
 
-  .fixed {
-    position: fixed;
-    top: 100px;
+  .custom-menu {
+    position: absolute;
+    width: 100%;
+    background-color: $white_color;
   }
 }
