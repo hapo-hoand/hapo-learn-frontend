@@ -38,7 +38,7 @@ div.content {
     color: $white_color;
     background-color: $warning_color;
     border-radius: 35px;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px $color_box;
     font-weight: bold;
     text-align: center;
   }
