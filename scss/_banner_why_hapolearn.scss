@@ -51,3 +51,45 @@
     margin-left: 20px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .banner-why-hapolearn {
+    padding: 150px 0 20px 0;
+
+    .img-keyboard {
+      width: 220px;
+      height: 330px;
+      top: -35%;
+    }
+  }
+
+  .text-why-hapo {
+    .big-text {
+      width: 100%;
+      text-align: center;
+      top: 30px;
+      font-size: 50px;
+      position: absolute;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .lesson {
+    .icon {
+      margin-left: 0px;
+      font-size: 14px;
+      padding: 2px;
+    }
+  }
+
+  .text-why-hapo {
+    .big-text {
+      text-align: left;
+      font-size: 40px;
+      right: 0;
+      top: 10px;
+      width: 60%;
+    }
+  }
+}
