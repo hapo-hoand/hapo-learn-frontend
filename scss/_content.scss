@@ -112,6 +112,14 @@ span.other-course,
     margin-top: -80px;
   }
 
+  .card-body {
+    p {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+  }
   .col-courses {
     padding: 0 8px;
   }
@@ -126,6 +134,10 @@ span.other-course,
 }
 
 @media screen and (max-width: 414px) {
+  .main-content {
+    margin-top: -150px;
+  }
+  
   .col-courses {
     padding: 0 4px;
   }
