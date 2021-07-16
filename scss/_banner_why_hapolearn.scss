@@ -1,9 +1,7 @@
 .banner-why-hapolearn {
   background-image: url("../public/img/banner_2.png");
   height: auto;
-  display: flex;
-  position: relative;
-  padding: 60px 80px;
+	position: relative;
   @include style-img;
 
   .img-keyboard,
@@ -13,22 +11,17 @@
     }
   }
 
-  .img-laptop {
-    flex: 1;
-  }
+	.img-laptop {
+		width: 100%;
+		height: 544px;
+		margin-top: 0;
+	}
 
   .img-keyboard {
     width: 400px;
     height: 478px;
     position: absolute;
     top: -30%;
-    left: 0;
-  }
-
-  .lesson-content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
   }
 }
 
@@ -48,34 +41,52 @@
     background-color: $white_color;
     color: $black_color;
     border-radius: 50%;
-    margin-left: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .banner-why-hapolearn {
-    padding: 150px 0 20px 0;
-
     .img-keyboard {
       width: 220px;
       height: 330px;
-      top: -35%;
+      top: -40%;
     }
+
+		.img-laptop {
+			width: 100%;
+			height: 300px;
+			margin: 50px 0 0 0;
+		}
   }
+
+	.lesson-content.container {
+		max-width: 768px;
+	}
+
+	.lesson {
+		p.text-lesson {
+			overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+		}
+	}
 
   .text-why-hapo {
     .big-text {
       width: 100%;
-      text-align: center;
-      top: 30px;
       font-size: 50px;
       position: absolute;
+			top: -60%;
+			left: 50%;
     }
   }
 }
 
 @media screen and (max-width: 414px) {
   .lesson {
+		float: right;
+    
     .icon {
       margin-left: 0px;
       font-size: 14px;
@@ -83,13 +94,37 @@
     }
   }
 
+	.banner-why-hapolearn {
+		.img-laptop {
+				margin: 0;
+		}
+
+		.img-keyboard {
+			top: -20%;
+		}
+  }
+
   .text-why-hapo {
+		display: inline-block;
     .big-text {
-      text-align: left;
+			position: relative;
+      float: right;
+			text-align: left;
       font-size: 40px;
-      right: 0;
-      top: 10px;
+			padding: 20px 0;
       width: 60%;
+			top: 0;
+			left: 0;
     }
   }
+
+	.lesson-content {
+		.row {
+			display: block;
+		}
+
+		.custom-col {
+			max-width: 100%;
+		}
+	}
 }
