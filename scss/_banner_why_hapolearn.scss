@@ -1,0 +1,95 @@
+.banner-why-hapolearn {
+  background-image: url("../public/img/banner_2.png");
+  height: auto;
+  display: flex;
+  position: relative;
+  padding: 60px 80px;
+  @include style-img;
+
+  .img-keyboard,
+  .img-laptop {
+    img {
+      @include style-img;
+    }
+  }
+
+  .img-laptop {
+    flex: 1;
+  }
+
+  .img-keyboard {
+    width: 400px;
+    height: 478px;
+    position: absolute;
+    top: -30%;
+    left: 0;
+  }
+
+  .lesson-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+.text-why-hapo {
+  color: $white_color;
+
+  .big-text {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: $font_utm;
+  }
+}
+
+.lesson {
+  .icon {
+    padding: 5px;
+    background-color: $white_color;
+    color: $black_color;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+	.banner-why-hapolearn {
+		padding: 150px 0 20px 0;
+
+		.img-keyboard {
+			width: 220px;
+			height: 330px;
+			top: -35%;
+		}
+	}
+
+	.text-why-hapo {
+		.big-text {
+			width: 100%;
+			text-align: center;
+			top: 30px;
+			font-size: 50px;
+			position: absolute;
+		}
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.lesson {
+		.icon {
+			margin-left: 0px;
+			font-size: 14px;
+			padding: 2px;
+		}
+	}
+	
+	.text-why-hapo {
+		.big-text {
+			text-align: left;
+			font-size: 40px;
+			right: 0;
+			top: 10px;
+			width: 60%;
+		}
+	}
+}

@@ -75,6 +75,14 @@ div.courses,
   }
 }
 
+div.course-view {
+  margin-top: 0;
+  
+  .view {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+}
 span.other-course,
 .title-feedback {
   width: auto;
@@ -137,7 +145,14 @@ span.other-course,
   .main-content {
     margin-top: -150px;
   }
-  
+
+  div.course-view
+  {
+    .view {
+      margin-top: 0;
+    }
+  }
+
   .col-courses {
     padding: 0 4px;
   }
