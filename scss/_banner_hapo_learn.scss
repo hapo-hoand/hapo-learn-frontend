@@ -23,6 +23,7 @@ div.content {
   span.text-add {
     font-weight: bold;
     color: $blue_charcoal;
+    font-family: $font_ui;
     @include text-banner-hapo();
   }
 
