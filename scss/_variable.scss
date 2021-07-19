@@ -21,8 +21,16 @@ $gray_color: #e5e5e5;
 $color_box: rgba(0, 0, 0, 0.25);
 $font_utm: "utm_bryantlgregular";
 $font_san_serif: sans-serif;
+$font_ui: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 @mixin text-banner-hapo {
   line-height: 60px;
   font-size: 45px;
+}
+
+@mixin style-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
