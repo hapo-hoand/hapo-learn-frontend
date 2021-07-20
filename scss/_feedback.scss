@@ -66,7 +66,6 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-
   }
 }
 
@@ -77,6 +76,7 @@
 .comment:before {
   border-top: 15px solid $color_box;
 }
+
 .text-detail-feedback {
   display: block;
   width: 50%;
