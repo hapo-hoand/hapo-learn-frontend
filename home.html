@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="./Css/main.css">
-        <link rel="stylesheet" href="./Css/fontawesome-free-5.15.3-web/css/all.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/fontawesome-free-5.15.3-web/css/all.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <title>Hello, world!</title>
     </head>
 
@@ -31,16 +33,16 @@
                                     id="navbarNavDropdown">
                                     <ul class="navbar-nav menu">
                                         <li class="nav-item">
-                                            <a class="nav-link item" href="#">Home</a>
+                                            <a class="nav-link item-menu" href="#">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link item item-active" href="#">All Course</a>
+                                            <a class="nav-link item-menu item-active" href="#">All Course</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link item" href="#">Login/Register</a>
+                                            <a class="nav-link item-menu" href="#">Login/Register</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link item" href="#">Profile</a>
+                                            <a class="nav-link item-menu" href="#">Profile</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -48,116 +50,115 @@
                         </div>
                     </nav>
                 </div>
-                <div class="fixed">
-                    <div class="banner-hapo-learn">
-                        <div class="row w-100 m-0">
-                            <div class="col-12 p-0">
-                                <div class="bg-img"></div>
-                            </div>
-                            <div class="col-12 content-banner">
-                                <div class="content">
-                                    <span class="text-motto">Learn AnyTime, AnyWhere</span>
-                                    <span class="text-add">at HapoLearn <img src="./public/img/owl.png" class="img-fluid" alt="img">!</span>
-                                    <small>Interective lessons, "on-the-go" <br> practice, peer support</small>
-                                    <span class="text-time">Start Learning Now!</span>
-                                </div>
-                            </div>
+                <div class="banner-hapo-learn">
+                    <div class="row w-100 m-0">
+                        <div class="col-12 p-0">
+                            <div class="bg-img"></div>
                         </div>
-                    </div>
-                    <div class="top-content"></div>
-                    <div class="main-content container p-md-0">
-                        <div class="row">
-                            <div class="col-lg col-md-4 col-sm-12 col-courses">
-                                <div class="card">
-                                    <div class="logo thumbnail lg-html">
-                                        <img class="card-img-top" src="./public/img/html.png" class="img-fluid" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">HTML/CSS/JS Tutorial</h5>
-                                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-                                        <a href="#" class="btn btn-primary link-course">Take This Course</a>
-                                    </div>
-                                </div>
+                        <div class="col-12 content-banner">
+                            <div class="content">
+                                <span class="text-motto">Learn AnyTime, AnyWhere</span>
+                                <span class="text-add">at HapoLearn <img src="./public/img/owl.png" class="img-fluid" alt="img">!</span>
+                                <small>Interective lessons, "on-the-go" <br> practice, peer support</small>
+                                <span class="text-time">Start Learning Now!</span>
                             </div>
-                            <div class="col-lg col-md-4 col-sm-12 col-courses">
-                                <div class="card">
-                                    <div class="logo thumbnail lg-laravel">
-                                        <img class="card-img-top" src="./public/img/laravel.png" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">LARAVEL Tutorial</h5>
-                                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-                                        <a href="#" class="btn btn-primary link-course">Take This Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg col-md-4 col-sm-12 col-courses">
-                                <div class="card" >
-                                    <div class="logo thumbnail lg-php">
-                                        <img class="card-img-top" src="./public/img/php.png" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">PHP Tutorial</h5>
-                                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-                                        <a href="#" class="btn btn-primary link-course">Take This Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="courses">
-                            <span class="other-course">
-                                <h1 class="font-weight-bold">Other Courses</h1>
-                                <span class="line"></span>
-                            </span>
-                        </div>
-            
-                        <div class="row">
-                            <div class="col-lg col-md-4 col-sm-12 col-courses">
-                                <div class="card" >
-                                    <div class="logo thumbnail lg-css">
-                                        <img class="card-img-top" src="./public/img/css.png" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">CSS Tutorial</h5>
-                                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-                                        <a href="#" class="btn btn-primary link-course">Take This Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg col-md-4 col-sm-12 col-courses">
-                                <div class="card" >
-                                    <div class="logo thumbnail lg-rails">
-                                        <img class="card-img-top" src="./public/img/rails.png" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Ruby on rails Tutorial</h5>
-                                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-                                        <a href="#" class="btn btn-primary link-course">Take This Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg col-md-4 col-sm-12 col-courses">
-                                <div class="card" >
-                                    <div class="logo thumbnail lg-java">
-                                        <img class="card-img-top" src="./public/img/java.png" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Java Tutorial</h5>
-                                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-                                        <a href="#" class="btn btn-primary link-course">Take This Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="courses course-view">
-                            <span class="other-course view">
-                                <a href="#" class="link-view"><h3>View All Our Courses <i class="fas fa-long-arrow-alt-right"></i></h3></a>
-                            </span>
                         </div>
                     </div>
                 </div>
+                <div class="top-content"></div>
+                <div class="main-content container p-md-0">
+                    <div class="row">
+                        <div class="col-lg col-md-4 col-sm-12 col-courses">
+                            <div class="card">
+                                <div class="logo thumbnail lg-html">
+                                    <img class="card-img-top" src="./public/img/html.png" class="img-fluid" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">HTML/CSS/JS Tutorial</h5>
+                                    <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                                    <a href="#" class="btn btn-primary link-course">Take This Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-12 col-courses">
+                            <div class="card">
+                                <div class="logo thumbnail lg-laravel">
+                                    <img class="card-img-top" src="./public/img/laravel.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">LARAVEL Tutorial</h5>
+                                    <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                                    <a href="#" class="btn btn-primary link-course">Take This Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-12 col-courses">
+                            <div class="card" >
+                                <div class="logo thumbnail lg-php">
+                                    <img class="card-img-top" src="./public/img/php.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">PHP Tutorial</h5>
+                                    <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                                    <a href="#" class="btn btn-primary link-course">Take This Course</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="courses">
+                        <span class="other-course">
+                            <h1 class="font-weight-bold title">Other Courses</h1>
+                            <span class="line"></span>
+                        </span>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-lg col-md-4 col-sm-12 col-courses">
+                            <div class="card" >
+                                <div class="logo thumbnail lg-css">
+                                    <img class="card-img-top" src="./public/img/css.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">CSS Tutorial</h5>
+                                    <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                                    <a href="#" class="btn btn-primary link-course">Take This Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-12 col-courses">
+                            <div class="card" >
+                                <div class="logo thumbnail lg-rails">
+                                    <img class="card-img-top" src="./public/img/rails.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Ruby on rails Tutorial</h5>
+                                    <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                                    <a href="#" class="btn btn-primary link-course">Take This Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-12 col-courses">
+                            <div class="card" >
+                                <div class="logo thumbnail lg-java">
+                                    <img class="card-img-top" src="./public/img/java.png" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Java Tutorial</h5>
+                                    <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                                    <a href="#" class="btn btn-primary link-course">Take This Course</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="courses course-view">
+                        <span class="other-course view">
+                            <a href="#" class="link-view"><h3>View All Our Courses <i class="fas fa-long-arrow-alt-right"></i></h3></a>
+                        </span>
+                    </div>
+                </div>
+
                 <div class="banner-why-hapolearn">
                     <div class="img-keyboard">
                         <img src="./public/img/keyboard.png" alt="hapo">
@@ -188,17 +189,165 @@
                         </div>
                     </div>
                 </div>
+                <nav class="container feed-back">
+                    <div class="courses txt-feed-back">
+                        <span class="other-course">
+                            <h1 class="font-weight-bold title">FeedBack</h1>
+                            <span class="line"></span>
+                        </span>
+                        <span class="text-detail-feedback">What other students turned professionals have to say about us after learning with us and reaching their goals</span>
+                    </div>
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <section class="autoplay slider">
+                            <div class="carousel-item active">
+                                <div class="col-courses col-slide">
+                                    <div class="item">
+                                        <div class="comment">
+                                            <span class="line"></span>
+                                            <span class="mess">
+                                                <small> “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</small>
+                                            </span>
+                                        </div>
+                                        <div class="info">
+                                            <span class="avt-author">
+                                                <img src="./public/img/avt_1.png" alt="img">
+                                            </span>
+                                            <div class="data">
+                                                <h5> Hoang Anh Nguyen </h5>
+                                                <span> PHP </span>
+                                                <span><img src="./public/img/star.png" alt="img"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-courses col-slide">
+                                    <div class="item">
+                                        <div class="comment">
+                                            <span class="line"></span>
+                                            <span class="mess">
+                                                <small> “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</small>
+                                            </span>
+                                        </div>
+                                        <div class="info">
+                                            <span class="avt-author">
+                                                <img src="./public/img/avt_1.png" alt="img">
+                                            </span>
+                                            <div class="data">
+                                                <h5> Hoang Anh Nguyen </h5>
+                                                <span> C# </span>
+                                                <span><img src="./public/img/star.png" alt="img"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-courses col-slide">
+                                    <div class="item">
+                                        <div class="comment">
+                                            <span class="line"></span>
+                                            <span class="mess">
+                                                <small> “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</small>
+                                            </span>
+                                        </div>
+                                        <div class="info">
+                                            <span class="avt-author">
+                                                <img src="./public/img/avt_1.png" alt="img">
+                                            </span>
+                                            <div class="data">
+                                                <h5> Hoang Anh Nguyen </h5>
+                                                <span> Python </span>
+                                                <span><img src="./public/img/star.png" alt="img"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-courses col-slide">
+                                    <div class="item">
+                                        <div class="comment">
+                                            <span class="line"></span>
+                                            <span class="mess">
+                                                <small> “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</small>
+                                            </span>
+                                        </div>
+                                        <div class="info">
+                                            <span class="avt-author">
+                                                <img src="./public/img/avt_1.png" alt="img">
+                                            </span>
+                                            <div class="data">
+                                                <h5> Hoang Anh Nguyen </h5>
+                                                <span> Java </span>
+                                                <span><img src="./public/img/star.png" alt="img"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-courses col-slide">
+                                    <div class="item">
+                                        <div class="comment">
+                                            <span class="line"></span>
+                                            <span class="mess">
+                                                <small> “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</small>
+                                            </span>
+                                        </div>
+                                        <div class="info">
+                                            <span class="avt-author">
+                                                <img src="./public/img/avt_1.png" alt="img">
+                                            </span>
+                                            <div class="data">
+                                                <h5> Hoang Anh Nguyen </h5>
+                                                <span> C++ </span>
+                                                <span><img src="./public/img/star.png" alt="img"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-courses col-slide">
+                                    <div class="item">
+                                        <div class="comment">
+                                            <span class="line"></span>
+                                            <span class="mess">
+                                                <small> “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</small>
+                                            </span>
+                                        </div>
+                                        <div class="info">
+                                            <span class="avt-author">
+                                                <img src="./public/img/avt_1.png" alt="img">
+                                            </span>
+                                            <div class="data">
+                                                <h5> Hoang Anh Nguyen </h5>
+                                                <span> NodeJS </span>
+                                                <span><img src="./public/img/star.png" alt="img"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>        
+                    </div>
+                </nav>
             </div>
         </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="./Js/main.js"></script>
+        
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
     </body>
     
 </html>

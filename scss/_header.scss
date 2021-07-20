@@ -1,5 +1,5 @@
 body {
-  font-family: $font_utm;
+  font-family: $font_san_serif;
 }
 
 .custom-menu {
@@ -33,7 +33,7 @@ body {
     outline: 0;
   }
 
-  a {
+  a.item-menu {
     text-decoration: none;
     color: $black_color;
     font-size: 15px;
