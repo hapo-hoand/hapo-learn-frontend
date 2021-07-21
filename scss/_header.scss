@@ -1,5 +1,5 @@
 body {
-  font-family: $font_utm;
+  font-family: $font_san_serif;
 }
 
 .custom-menu {
@@ -9,7 +9,7 @@ body {
 .navbar {
   button.btn-menu[aria-expanded="true"] > span.close {
     display: inline;
-    color: $black_color;
+    color: black;
   }
 
   button.btn-menu[aria-expanded="true"] > span.navbar-toggler-icon {
@@ -33,9 +33,9 @@ body {
     outline: 0;
   }
 
-  a {
+  a.item-menu {
     text-decoration: none;
-    color: $black_color;
+    color: black;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: bold;

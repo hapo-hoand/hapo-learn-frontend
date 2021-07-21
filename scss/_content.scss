@@ -1,11 +1,7 @@
 .main-content {
   margin-top: -70px;
-  font-family: $font_san_serif;
+  font-family: $font_utm;
   }
-  
-.feed-back {
-  padding-bottom: 60px;
-}
 
 .card {
   text-align: center;
@@ -52,7 +48,7 @@
   }
 
   .card-title {
-    color: $green_color;
+    color: green;
   }
 
   a.link-course {
@@ -66,9 +62,14 @@
 
 div.courses,
 .txt-feed-back {
-  margin-top: 55px;
   text-align: center;
   position: relative;
+
+  .title {
+    font-size: 80px;
+    color: $blue_charcoal;
+    font-family: $font_utm;
+  }
 }
 
 div.course-view {
@@ -102,11 +103,12 @@ span.other-course,
   a.link-view {
     text-decoration: none;
     color: $warning_color;
+    
     &:hover {
-      color: $green_color;
+      color: green;
 
       i.icon {
-        color: $green_color;
+        color: green;
       }
     }
   }
@@ -137,6 +139,18 @@ span.other-course,
   .card-text {
     font-size: 15px;
   }
+
+  div.courses,
+  .txt-feed-back {
+    .title {
+      font-size: 50px;
+    }
+  }
+}
+
+.courses, 
+.feed-back {
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 414px) {
@@ -160,6 +174,13 @@ span.other-course,
     a.link-view {
       padding-left: 40px;
       padding-right: 40px;
+    }
+  }
+
+  div.courses,
+  .txt-feed-back {
+    .title {
+      font-size: 40px;
     }
   }
 }
