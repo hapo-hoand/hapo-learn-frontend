@@ -2,10 +2,6 @@
   margin-top: -70px;
   font-family: $font_utm;
   }
-  
-.feed-back {
-  font-family: $font_ui;
-}
 
 .card {
   text-align: center;
@@ -52,7 +48,7 @@
   }
 
   .card-title {
-    color: $green_color;
+    color: green;
   }
 
   a.link-course {
@@ -71,6 +67,8 @@ div.courses,
 
   .title {
     font-size: 80px;
+    color: $blue_charcoal;
+    font-family: $font_utm;
   }
 }
 
@@ -106,10 +104,10 @@ span.other-course,
     text-decoration: none;
     color: $warning_color;
     &:hover {
-      color: $green_color;
+      color: green;
 
       i.icon {
-        color: $green_color;
+        color: green;
       }
     }
   }
