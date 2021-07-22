@@ -25,3 +25,10 @@ $(document).on('ready', function() {
         }]
     });
 })
+
+$(function () {
+    $('.example-popover').popover({
+      container: 'body'
+    })
+  })
+  
