@@ -22,8 +22,12 @@ body {
 }
 
 .header {
-  position: relative;
-  z-index: 10;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: $white_color;
   
   .btn-menu {
     position: absolute;
@@ -109,12 +113,5 @@ ul.menu {
 
   .top-content {
     background-image: linear-gradient(0deg, $gray_color, $gray_color);
-  }
-
-  .custom-menu {
-    position: absolute;
-    width: 100%;
-    background-color: $white_color;
-    left: 0;
   }
 }

@@ -15,40 +15,41 @@
     <body>
         <div class="wrapper">
             <div class="container-fluid p-0">
-                <div class="header container">
-                    <nav class="navbar navbar-expand-sm navbar-light bg-white p-0 m-0">
-                        <div class="row align-items-center justify-content-center w-100 m-0">
-                            <div class="col-lg-4 col-md-12 text-center col-sm-2">
-                                <button class="navbar-toggler btn-menu" type="button" data-toggle="collapse"
-                                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                    <span class="my-1 mx-2 close fa fa-times"></span>
-                                </button>
-                                <a class="navbar-brand" href="#"><img src="./public/img/logo_hapolearn.png"
-                                        class="img-fluid" alt="hapo"></a>
-                            </div>
-                            <div class="col-lg-8 col-md-12 text-center col-sm-12">
-                                <div class="collapse custom-menu navbar-collapse justify-content-lg-end justify-content-md-center p-md-2"
-                                    id="navbarNavDropdown">
-                                    <ul class="navbar-nav menu">
-                                        <li class="nav-item">
-                                            <a class="nav-link item-menu" href="#">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link item-menu item-active" href="#">All Course</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link item-menu" href="#">Login/Register</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link item-menu" href="#">Profile</a>
-                                        </li>
-                                    </ul>
+                <div class="header">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-white p-0 m-0">
+                            <div class="row align-items-center justify-content-center w-100 m-0">
+                                <div class="col-lg-4 col-md-12 text-center col-sm-2">
+                                    <button class="navbar-toggler btn-menu" type="button" data-toggle="collapse"
+                                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                        <span class="my-1 mx-2 close fa fa-times"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#"><img src="./public/img/logo_hapolearn.png" class="img-fluid" alt="hapo"></a>
+                                </div>
+                                <div class="col-lg-8 col-md-12 text-center col-sm-12">
+                                    <div class="collapse custom-menu navbar-collapse justify-content-lg-end justify-content-md-center p-md-2"
+                                        id="navbarNavDropdown">
+                                        <ul class="navbar-nav menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link item-menu" href="#">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link item-menu item-active" href="#">All Course</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link item-menu" id="login" href="#">Login/Register</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link item-menu" href="#">Profile</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
                 <div class="banner-hapo-learn">
                     <div class="row w-100 m-0">
@@ -154,7 +155,7 @@
         
                     <div class="courses course-view">
                         <span class="other-course view">
-                            <a href="#" class="link-view"><p>View All Our Courses <i class="fas fa-long-arrow-alt-right"></i></p></a>
+                            <a href="#" class="link-view"><h3>View All Our Courses <i class="fas fa-long-arrow-alt-right"></i></h3></a>
                         </span>
                     </div>
                 </div>
@@ -410,7 +411,115 @@
                 </div>
             </div>
         </div>
-
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog custom-modal">
+                <div class="modal-content">
+                    <span class="fa fa-times close-modal"></span>
+                    <ul class="nav nav-tabs row tab-list" id="example-tabs" role="tablist">
+                        <li class="nav-item col-6 tab-item">
+                            <a id="tab1" class="nav-link active" data-toggle="tab" role="tab"  href="#pane-tab-1">Login</a>
+                        </li>
+                        <li class="nav-item col-6 tab-item">
+                            <a id="tab2" class="nav-link" data-toggle="tab" role="tab"  href="#pane-tab-2">Register</a>
+                        </li>
+                    </ul>
+                      
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="pane-tab-1" role="tabpanel" aria-labelledby="tab1">
+                            <form class="login-content">
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label font-weight-bold">User Name:</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label font-weight-bold">Password:</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-6">
+                                        <input type="checkbox" id="exampleCheck1">
+                                        <small class="form-check-label font-weight-bold" for="exampleCheck1">Remenber me</small>
+                                    </div>
+                                    <div class="col-6 forgot">
+                                        <small class="font-weight-bold"><a href="#">Forgot password</a></small>
+                                    </div>
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <button type="submit" class="btn btn-login">LOGIN</button>
+                                </div >
+                                <div class="integrated-login font-weight-bold">Login with</div>
+                                <div class="my-3 login-accout login-with-google text-center">
+                                    <i class="fab fa-google-plus-g icon-login"></i>
+                                    <span>Google</span>  
+                                </div>
+                                <div class="my-3 login-accout login-with-facebook text-center ">
+                                    <i class="fab fa-facebook-f icon-login"></i>
+                                    <span>Facebook</span>
+                                </div>
+                              </form>
+                        </div>
+                        <div class="tab-pane fade" id="pane-tab-2" role="tabpanel" aria-labelledby="tab2">
+                            <form class="register-content">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label font-weight-bold">User Name:</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label font-weight-bold">Email:</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label font-weight-bold">Password:</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label font-weight-bold">Repeat Password:</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <button type="submit" class="btn btn-login">REGISTER</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="messenger"></div>
+        <div class="wrap-mess">
+            <span class="close-mess fa fa-times"></span>
+            <div class="content-mess user-left">
+                <div class="image">
+                    <img src="./public/img/owl_mess.png" alt="img">
+                </div>
+                <div class="detail">
+                    <small>HapoLearn</small>
+                    <span>
+                        HapoLearn xin chào bạn. <br> Bạn có cần chúng tôi hỗ trợ gì không?
+                    </span>
+                </div>
+            </div>
+            <div class="content-mess user-right">
+                <div class="image">
+                    <img src="./public/img/owl_mess.png" alt="img">
+                </div>
+                <div class="detail">
+                    <small>HapoLearn</small>
+                    <span>
+                        HapoLearn xin chào bạn. <br> Bạn có cần chúng tôi hỗ trợ gì không?
+                    </span>
+                </div>
+            </div>
+            <div class="login-mess">
+                <div class="login-accout login-with-google text-center btn-login-mess">
+                    <i class="fab fa-facebook-messenger"></i>
+                    <span>Đăng nhập vào Messenger</span>  
+                </div>
+                <small>Chat với HapoLearn trong Messenger</small>
+            </div>
+        </div>
+        
+       
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="./js/main.js"></script>

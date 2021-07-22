@@ -31,3 +31,19 @@ $(function () {
       container: 'body'
     })
 })
+
+$("#login").click(function(){
+    $("#exampleModal").modal("show")
+})
+
+$(".close-modal").click(function(){
+    $("#exampleModal").modal("hide")
+})
+
+$(".messenger").click(function(){
+    $(".wrap-mess").toggleClass("show")
+})
+
+$(".close-mess").click(function(){
+    $(".wrap-mess").toggleClass("show")
+})

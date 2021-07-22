@@ -1,0 +1,128 @@
+.messenger {
+  background-image: url("../public/img/mess.png");
+  position: fixed;
+  background-color: $color_face_book;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border: 2px solid blue;
+  border-radius: 50%;
+  bottom: 10%;
+  right: 3%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px black;
+  }
+}
+
+.wrap-mess {
+  z-index: 50;
+  display: none;
+  position: fixed;
+  width: 360px;
+  bottom: 20%;
+  right: 3%;
+  background-color: $white_color;
+  padding: 5px;
+  box-shadow: 0px 0px 8px $color_box;
+  border-radius: 23px;
+
+  small {
+    display: block;
+    padding: 0 25px;
+  }
+}
+
+.content-mess {
+  display: flex;
+  align-items: flex-end;
+  margin: 10px 0;
+
+  .detail {
+    span {
+      display: inline-block;
+      padding: 5px 15px;
+      background-color: $bg_mess;
+      font-size: 12px;
+      line-height: 17px;
+      border-radius: 15px;
+      margin: 0 10px;
+    }
+  }
+}
+
+.user-left {
+  justify-self: start;
+
+  .image {
+    order: 1;
+  }
+
+  .detail {
+    order: 2;
+  }
+
+  small {
+    text-align: left;
+  }
+}
+
+.user-right {
+  justify-content: flex-end;
+
+  .image {
+    order: 2;
+  }
+
+  .detail {
+    order: 1;
+  }
+
+  small {
+    text-align: right;
+  }
+}
+
+.login-mess {
+  text-align: center;
+  display: block;
+  margin: 20px 20px;
+
+  .btn-login-mess {
+    width: 80%;
+    border-radius: 35px;
+    margin: auto;
+    background-color: $color_btn;
+
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+.close-mess {
+  position: absolute;
+  padding: 3px 6px;
+  background-color: $color_box;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.wrap-mess.show {
+  display: block;
+}
+
+@media only screen and (max-width: 414px) {
+  .wrap-mess {
+    width: 335px;
+  }
+}
