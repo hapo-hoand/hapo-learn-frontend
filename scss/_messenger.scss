@@ -1,16 +1,17 @@
 .messenger {
-  background-image: url("../public/img/mess.png");
   position: fixed;
   background-color: $color_face_book;
   color: white;
   width: 45px;
   height: 45px;
-  border: 2px solid blue;
+  padding: 5px;
   border-radius: 50%;
   bottom: 10%;
   right: 3%;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  img {
+    @include style-img;
+  }
 
   &:hover {
     cursor: pointer;
