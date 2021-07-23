@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,700&display=swap");
 @font-face {
   font-family: "utm_bryantlgregular";
-  src: url("../Public/Font/utm_bryantlg-webfont.woff2") format("woff2"),
-    url("../Public/Font/utm_bryantlg-webfont.woff") format("woff");
+  src: url("../public/font/utm_bryantlg-webfont.woff2") format("woff2"),
+    url("../public/font/utm_bryantlg-webfont.woff") format("woff");
 }
 
 $white_color: #ffffff;
@@ -21,6 +21,10 @@ $color_btn_slide: #969494;
 $color_border: #e2e2e2;
 $color_footer: #505353;
 $color_end: #454545;
+$color_google: #DC4E41;
+$color_face_book: #3B5999;
+$bg_mess: #F1F0F0;
+$color_btn: #3184F7;
 $font_utm: "utm_bryantlgregular";
 $font_san_serif: sans-serif;
 $font_ui: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
