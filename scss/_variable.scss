@@ -16,7 +16,9 @@ $danger_color: #e14e40;
 $primary_color: #1b75bb;
 $warning_color: #b2d235;
 $gray_color: #e5e5e5;
+$color_text_box: #6a9967;
 $color_box: #ccc;
+$color_link_course: #6F8710;
 $color_btn_slide: #969494;
 $color_border: #e2e2e2;
 $color_footer: #505353;
@@ -31,7 +33,7 @@ $font_ui: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 @mixin text-banner-hapo {
   line-height: 60px;
-  font-size: 45px;
+  font-size: 50px;
 }
 
 @mixin style-img {

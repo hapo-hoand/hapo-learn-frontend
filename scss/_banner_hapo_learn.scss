@@ -1,8 +1,9 @@
 div.content {
-  display: block;
+  display: flex;
   width: auto;
   height: auto;
   padding: 10px 30px;
+  align-items: center;
 
   span.text-motto,
   span.text-add,
@@ -23,7 +24,7 @@ div.content {
   span.text-add {
     font-weight: bold;
     color: $blue_charcoal;
-    font-family: $font_ui;
+    text-shadow: 0 0 2px $blue_charcoal;
     @include text-banner-hapo();
   }
 
@@ -34,15 +35,20 @@ div.content {
     color: $white_color;
     background-color: $warning_color;
     border-radius: 35px;
-    box-shadow: inset 0px 4px 4px $color_box;
     font-weight: bold;
     text-align: center;
+    box-shadow: inset 0px 4px 4px $color_text_box;
+
+    &:hover {
+      color: green;
+      cursor: pointer;
+    }
   }
 }
 
 .banner-hapo-learn {
   position: relative;
-  margin-top: 65px;
+  margin-top: 80px;
 
   .bg-img {
     background-image: url('../public/img/hapo_Learn_banner_1.png');
@@ -96,7 +102,7 @@ div.content {
   }
 
   .banner-hapo-learn {
-    margin-top: 150px;
+    margin-top: 135px;
 
     .bg-img {
       width: 100%;
