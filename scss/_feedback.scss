@@ -80,34 +80,41 @@
 
 .text-detail-feedback {
   display: block;
-  font-size: 16px;
-  width: 50%;
+  font-size: 25px;
+  width: 80%;
   margin: auto;
 }
 
 .slick-prev,
 .slick-next {
   z-index: 1;
-  top: 35% !important;
-
-  &::before {
-   opacity: 1;
-   background-color: $gray_color;
-   border-radius: 50%;
-   border: 1px solid $gray_color;
-  }
-
-  &:hover {
-   opacity: .8;
-  }
+  top: 28% !important;
 }
 
+.slick-prev:before, 
+.slick-next:before {
+  content: "" !important;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  width: 25px;
+  display: block;
+  height: 25px;
+}
+
+.slick-prev:before {
+  background-image: url("../public/img/less.png");
+}
+
+.slick-next:before {
+  background-image: url("../public/img/greater.png");
+}
 .slick-next {
-  right: 15px !important;
+  right: 17px !important;
 }
 
 .slick-prev {
-  left: 15px !important;
+  left: 13px !important;
 }
 
 .col-courses.col-slide {
@@ -116,12 +123,14 @@
 
 @media only screen and (max-width: 768px) {
   .text-detail-feedback {
-    width: 60%;
+    width: 75%;
+    font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 415px) {
   .text-detail-feedback {
-    width: 85%;
+    width: 100%;
+    font-size: 16px;
   }
 }

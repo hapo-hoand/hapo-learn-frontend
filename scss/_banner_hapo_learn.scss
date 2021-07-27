@@ -41,7 +41,7 @@ div.content {
     box-shadow: inset 0px 4px 4px $color_text_box;
 
     &:hover {
-      color: green;
+      color: black;
       cursor: pointer;
     }
   }
@@ -49,7 +49,7 @@ div.content {
 
 .banner-hapo-learn {
   position: relative;
-  margin-top: 70px;
+  margin-top: 105px;
 
   .bg-img {
     background-image: url('../public/img/hapo_Learn_banner_1.png');
@@ -140,6 +140,7 @@ div.content {
 
   .banner-hapo-learn {
     margin-top: 65px;
+    
     .bg-img {
       height: 200px;
     }

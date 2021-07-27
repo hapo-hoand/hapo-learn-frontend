@@ -61,7 +61,7 @@
     font-weight: 600;
 
     &:hover {
-      color: green;
+      color: black;
       cursor: pointer;
     }
   }
@@ -107,12 +107,13 @@ span.other-course,
 .title-feedback {
   width: auto;
   display: inline-block;
-  margin: 30px auto;
+  margin: 30px 0 60px 0;
   text-align: center;
 
   span.line {
     width: auto;
     display: block;
+    height: 6px;
     background-color: $warning_color;
     border: 2px solid $warning_color;
     border-radius: 2px;
@@ -125,15 +126,19 @@ span.other-course,
 
   a.link-view {
     text-decoration: none;
-    color: $warning_color;
+    color: #90AB26;
+    font-size: 40px;
     
-    &:hover {
-      color: green;
-      -webkit-text-stroke-width: 2px;
+    .icon-arrow {
+      background-image: url("../public/img/arrow_right.png");
+      width: 35px;
+      height: 20px;
+      background-size: cover;
+      background-position:center;
+    }
 
-      i.icon {
-        color: green;
-      }
+    &:hover {
+      font-size: 43px;
     }
   }
 }
@@ -142,6 +147,7 @@ span.other-course,
   p.card-text {
     height: 100px;
     overflow: hidden;
+    word-break: break-word;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -157,6 +163,11 @@ span.other-course,
   .card-body {
     p.card-text {
       height: 90px;
+    }
+  }
+  span.other-course {
+    a.link-view {
+      font-size: 28px;
     }
   }
 
@@ -188,17 +199,13 @@ span.other-course,
       height: 150px;
     }
   }
+
+  
 }
 
 @media screen and (max-width: 414px) {
   .main-content {
     margin-top: -150px;
-  }
-
-  div.course-view{
-    .view {
-      margin-top: 0;
-    }
   }
 
   .col-courses {
@@ -207,12 +214,17 @@ span.other-course,
 
   .card {
     margin: 30px;
-
-    a.link-view {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
   }
+
+   span.other-course {
+      a.link-view {
+        font-size: 22px;
+  
+        &:hover {
+          font-size: 25px;
+        }
+      }
+    }
 
   div.courses,
   .txt-feed-back {

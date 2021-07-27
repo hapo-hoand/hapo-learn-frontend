@@ -10,7 +10,7 @@ $(".btn-menu").click(function () {
 
 $(document).on("ready", function () {
   $(".autoplay").slick({
-    dots: true,
+    dots: false,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
