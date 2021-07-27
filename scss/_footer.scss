@@ -3,6 +3,10 @@
   background-color: $color_footer;
   padding: 50px;
   color: $white_color;
+
+  a {
+    color: $white_color;
+  }
 }
 
 .content-footer {

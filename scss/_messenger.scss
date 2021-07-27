@@ -1,6 +1,6 @@
 .messenger {
   position: fixed;
-  background-color: $color_face_book;
+  background-color: $color_messenger;
   color: white;
   width: 45px;
   height: 45px;
@@ -24,7 +24,7 @@
   z-index: 50;
   display: none;
   position: fixed;
-  width: 360px;
+  width: 320px;
   bottom: 150px;
   right: 70px;
   background-color: $white_color;
@@ -34,7 +34,7 @@
 
   small {
     display: block;
-    padding: 0 25px;
+    padding: 0 20px;
     font-weight: 600;
     color: $color_small_mess;
   }
@@ -54,7 +54,7 @@
       font-weight: 600;
       line-height: 17px;
       border-radius: 15px;
-      margin: 0 10px;
+      margin: 0 8px;
     }
   }
 }
@@ -97,8 +97,8 @@
   margin: 20px 20px;
 
   .btn-login-mess {
-    width: 80%;
-    border-radius: 35px;
+    width: 90%;
+    border-radius: 10px;
     margin: auto;
     background-color: $color_btn;
 
@@ -133,10 +133,6 @@
 }
 
 @media only screen and (max-width: 414px) {
-  .wrap-mess {
-    width: 335px;
-  }
-
   .messenger {
     right: 15px;
   }
