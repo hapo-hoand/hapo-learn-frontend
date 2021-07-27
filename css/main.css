@@ -103,15 +103,17 @@ div.content {
   div.content small {
     display: block; }
   div.content small {
-    padding: 20px 0 30px 0; }
+    padding: 20px 0 30px 0;
+    font-size: 20px; }
   div.content span.text-motto {
     letter-spacing: -0.05em;
+    color: #11114e;
     line-height: 60px;
     font-size: 50px; }
   div.content span.text-add {
     font-weight: bold;
     color: #11114e;
-    text-shadow: 0 0 2px #11114e;
+    -webkit-text-stroke-width: 2px;
     line-height: 60px;
     font-size: 50px; }
   div.content span.text-time {
@@ -151,13 +153,15 @@ div.content {
   div.content {
     padding: 10px;
     height: 70%; }
+    div.content small {
+      font-size: 16px; }
     div.content span.text-motto,
     div.content span.text-add {
-      font-size: 29px;
+      font-size: 30px;
       line-height: 35px; }
     div.content span.text-time {
       padding: 7px 33px;
-      font-size: 14px; }
+      font-size: 16px; }
 
   .content-banner {
     position: absolute; }
@@ -181,6 +185,8 @@ div.content {
     display: block;
     font-size: 18px;
     padding: 10px 30px; }
+  div.content small {
+    font-size: 16px; }
   div.content span.text-motto,
   div.content span.text-add {
     font-size: 25px;
@@ -243,7 +249,7 @@ div.courses,
   .txt-feed-back .title {
     font-size: 80px;
     color: #11114e;
-    text-shadow: 0 0 2px #11114e; }
+    -webkit-text-stroke-width: 2px; }
 
 div.course-view {
   margin-top: 0; }
@@ -253,7 +259,7 @@ div.course-view {
     div.course-view .view a {
       position: relative;
       font-size: 27px;
-      text-shadow: 2px 0px 2px #6f8710;
+      -webkit-text-stroke-width: 2px;
       line-height: 30px;
       display: flex;
       justify-content: center;
@@ -286,7 +292,7 @@ span.other-course,
     span.other-course a.link-view:hover,
     .title-feedback a.link-view:hover {
       color: green;
-      text-shadow: 2px 0px 2px green; }
+      -webkit-text-stroke-width: 2px; }
       span.other-course a.link-view:hover i.icon,
       .title-feedback a.link-view:hover i.icon {
         color: green; }
@@ -342,7 +348,10 @@ span.other-course,
 
   div.courses .title,
   .txt-feed-back .title {
-    font-size: 50px; } }
+    font-size: 50px; }
+
+  .card .thumbnail {
+    height: 170px; } }
 .banner-why-hapolearn {
   background-image: url("../public/img/banner_2.png");
   height: auto;
@@ -377,9 +386,11 @@ span.other-course,
     font-size: 60px;
     font-weight: bold; }
 
-.lesson .icon {
-  color: #ffffff;
-  font-size: 20px; }
+.lesson {
+  font-size: 18px; }
+  .lesson .icon {
+    color: #ffffff;
+    font-size: 18px; }
 
 @media screen and (max-width: 768px) {
   .banner-why-hapolearn .img-keyboard {
@@ -398,11 +409,15 @@ span.other-course,
   .lesson-content.container {
     max-width: 100%; }
 
-  .lesson p.text-lesson {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical; }
+  .lesson {
+    font-size: 16px; }
+    .lesson p.text-lesson {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical; }
+    .lesson .icon {
+      font-size: 16px; }
 
   .text-why-hapo .big-text {
     width: 100%;
@@ -415,6 +430,8 @@ span.other-course,
     display: inline-block;
     width: 100%;
     text-align: center; }
+    .lesson .icon {
+      font-size: 16px; }
     .lesson p.text-lesson {
       font-size: 14px; }
 
@@ -501,6 +518,7 @@ span.other-course,
 
 .text-detail-feedback {
   display: block;
+  font-size: 16px;
   width: 50%;
   margin: auto; }
 
@@ -661,10 +679,14 @@ span.other-course,
   .col-logo img {
     max-width: 350px; }
   .col-logo p {
-    margin-left: 70px; }
+    margin-left: 70px;
+    font-size: 18px; }
 
 .col-data {
   order: 2; }
+  .col-data p {
+    font-size: 20px;
+    font-weight: 700; }
 
 .col-contact {
   order: 3; }
@@ -690,25 +712,32 @@ span.other-course,
   .col-logo {
     order: 1; }
     .col-logo p {
-      margin-left: 0; }
+      margin-left: 0;
+      font-size: 16px; }
     .col-logo img {
-      max-width: 100%; } }
+      max-width: 100%; }
+
+  .col-data p {
+    font-size: 16px; } }
 @media only screen and (max-width: 414px) {
   .footer {
     padding: 50px 0; }
 
   .col-logo {
-    order: 2; }
+    order: 2;
+    padding-right: 0; }
     .col-logo img {
-      max-width: 100%; }
+      max-width: 80%; }
     .col-logo p {
-      margin-left: 0; }
+      margin-left: 0;
+      font-size: 14px; }
 
   .col-data {
     order: 1; }
 
   .col-contact {
-    order: 3; }
+    order: 3;
+    padding-left: 0; }
     .col-contact span {
       margin: 0 2px;
       font-size: 15px; }
@@ -745,7 +774,7 @@ span.other-course,
       border: 0;
       font-size: 25px;
       font-weight: bold;
-      font-family: sans-serif;
+      font-family: "utm_bryantlgregular";
       text-transform: uppercase;
       color: #b2d235;
       background-color: #ffffff;
@@ -798,7 +827,8 @@ span.other-course,
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  padding: 10px 0; }
+  padding: 10px 0;
+  border-radius: 3px; }
   .login-accout:hover {
     cursor: pointer; }
   .login-accout span {

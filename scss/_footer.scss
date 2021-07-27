@@ -60,11 +60,17 @@
 
   p {
     margin-left: 70px;
+    font-size: 18px;
   }
 }
 
 .col-data {
   order: 2;
+
+  p {
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
 
 .col-contact {
@@ -102,10 +108,17 @@
 
     p {
       margin-left: 0;
+      font-size: 16px;
     }
 
     img {
       max-width: 100%;
+    }
+  }
+
+  .col-data {
+    p {
+      font-size: 16px;
     }
   }
 }
@@ -117,13 +130,15 @@
   
   .col-logo {
     order: 2;
+    padding-right: 0;
 
     img {
-      max-width: 100%;
+      max-width: 80%;
     }
 
     p {
       margin-left: 0;
+      font-size: 14px;
     }
   }
 
@@ -133,7 +148,7 @@
 
   .col-contact {
     order: 3;
-
+    padding-left: 0;
     span {
       margin: 0 2px;
       font-size: 15px;
