@@ -168,6 +168,11 @@ span.other-course,
   span.other-course {
     a.link-view {
       font-size: 28px;
+
+      .icon-arrow {
+        width: 30px;
+        height: 20px;
+      }
     }
   }
 
@@ -219,7 +224,12 @@ span.other-course,
    span.other-course {
       a.link-view {
         font-size: 22px;
-  
+
+        .icon-arrow {
+          width: 25px;
+          height: 15px;
+        }
+        
         &:hover {
           font-size: 25px;
         }

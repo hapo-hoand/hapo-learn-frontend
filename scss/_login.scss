@@ -60,7 +60,8 @@
 .btn-login {
   background-color: $warning_color;
   color: $white_color;
-  padding: 10px 60px;
+  padding: 10px 0;
+  width: 50%;
   box-shadow: inset 0px 1.5px 2px #6f8710;
   border-radius: 22px;
   font-weight: bold;
@@ -124,6 +125,7 @@
 
 .login-with-facebook {
   background-color: $color_face_book;
+
   &:hover {
     background-color: $primary_color;
   }
@@ -131,13 +133,13 @@
 
 .remenber,
 .forgot {
-  font-size: 21px;
+  font-size: 16px;
 }
 
 .custom-checkbox {
   width: 12px;
   height: 12px;
-  margin: 3px 3px 0;
+  margin-right: 3px;
 }
 
 .remenber {
@@ -153,7 +155,21 @@
 }
 
 @media only screen and (max-width: 414px) {
+  .tab-list .tab-item a {
+    font-size: 20px;
+  }
   .custom-modal {
     width: 80%;
+  }
+
+  .remenber,
+  .forgot {
+    font-size: 14px;
+  }
+
+  .custom-checkbox {
+    width: 10px;
+    height: 10px;
+    margin: 1px 3px 0 1px;
   }
 }
