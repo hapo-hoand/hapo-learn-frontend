@@ -41,9 +41,11 @@
 }
 
 .lesson {
+  font-size: 18px;
+
   .icon {
     color: $white_color;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -73,11 +75,17 @@
   }
 
   .lesson {
+    font-size: 16px;
+
     p.text-lesson {
       overflow: hidden;
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
+    }
+
+    .icon {
+      font-size: 16px;
     }
   }
 
@@ -97,6 +105,10 @@
     display: inline-block;
     width: 100%;
     text-align: center;
+
+    .icon {
+      font-size: 16px;
+    }
 
     p.text-lesson {
       font-size: 14px;

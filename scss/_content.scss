@@ -75,7 +75,7 @@ div.courses,
   .title {
     font-size: 80px;
     color: $blue_charcoal;
-    text-shadow: 0 0 2px $blue_charcoal;
+    -webkit-text-stroke-width: 2px;
   }
 }
 
@@ -89,7 +89,7 @@ div.course-view {
     a {
       position: relative;
       font-size: 27px;
-      text-shadow: 2px 0px 2px #6f8710;
+      -webkit-text-stroke-width: 2px;
       line-height: 30px;
       display: flex;
       justify-content: center;
@@ -129,7 +129,7 @@ span.other-course,
     
     &:hover {
       color: green;
-      text-shadow: 2px 0px 2px green;
+      -webkit-text-stroke-width: 2px;
 
       i.icon {
         color: green;
@@ -218,6 +218,12 @@ span.other-course,
   .txt-feed-back {
     .title {
       font-size: 50px;
+    }
+  }
+
+  .card {
+    .thumbnail {
+      height: 170px;
     }
   }
 }
