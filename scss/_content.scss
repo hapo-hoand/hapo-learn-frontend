@@ -148,7 +148,18 @@ span.other-course,
   }
 }
   
+.courses, 
+.feed-back {
+  margin-top: 50px;
+}
+
 @media screen and (max-width: 768px) {
+  .card-body {
+    p.card-text {
+      height: 90px;
+    }
+  }
+
   .main-content {
     margin-top: -80px;
   }
@@ -171,11 +182,12 @@ span.other-course,
       font-size: 60px;
     }
   }
-}
 
-.courses, 
-.feed-back {
-  margin-top: 50px;
+  .card {
+    .thumbnail {
+      height: 150px;
+    }
+  }
 }
 
 @media screen and (max-width: 414px) {

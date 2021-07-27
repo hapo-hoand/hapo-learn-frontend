@@ -9,13 +9,15 @@ body {
 .custom-menu {
   position: relative; }
 
-.navbar button.btn-menu[aria-expanded="true"] > span.close {
-  display: inline;
-  color: black; }
-.navbar button.btn-menu[aria-expanded="true"] > span.navbar-toggler-icon {
-  display: none; }
-.navbar button.btn-menu[aria-expanded="false"] > span.close {
-  display: none; }
+.navbar {
+  padding: 0 50px; }
+  .navbar button.btn-menu[aria-expanded="true"] > span.close {
+    display: inline;
+    color: black; }
+  .navbar button.btn-menu[aria-expanded="true"] > span.navbar-toggler-icon {
+    display: none; }
+  .navbar button.btn-menu[aria-expanded="false"] > span.close {
+    display: none; }
 
 .header {
   width: 100%;
@@ -71,11 +73,15 @@ ul.menu .item-active {
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    display: flex; }
+    display: flex;
+    padding: 0; }
     .navbar .logo {
       display: block;
       width: 100%; } }
 @media only screen and (max-width: 414px) {
+  .navbar {
+    padding: 0; }
+
   .header {
     padding: 0; }
     .header img {
@@ -90,15 +96,14 @@ div.content {
   display: flex;
   width: auto;
   height: auto;
-  padding: 10px 30px;
+  padding: 10px 50px;
   align-items: center; }
   div.content span.text-motto,
   div.content span.text-add,
   div.content small {
     display: block; }
   div.content small {
-    line-height: 30px;
-    padding: 12px 0; }
+    padding: 20px 0 30px 0; }
   div.content span.text-motto {
     letter-spacing: -0.05em;
     line-height: 60px;
@@ -125,11 +130,11 @@ div.content {
 
 .banner-hapo-learn {
   position: relative;
-  margin-top: 80px; }
+  margin-top: 70px; }
   .banner-hapo-learn .bg-img {
     background-image: url("../public/img/hapo_Learn_banner_1.png");
     width: 100%;
-    height: 500px;
+    height: 615px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
@@ -153,9 +158,6 @@ div.content {
     div.content span.text-time {
       padding: 7px 33px;
       font-size: 14px; }
-    div.content small {
-      line-height: 20px;
-      padding: 15px 0; }
 
   .content-banner {
     position: absolute; }
@@ -296,7 +298,14 @@ span.other-course,
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical; }
 
+.courses,
+.feed-back {
+  margin-top: 50px; }
+
 @media screen and (max-width: 768px) {
+  .card-body p.card-text {
+    height: 90px; }
+
   .main-content {
     margin-top: -80px; }
 
@@ -311,11 +320,10 @@ span.other-course,
 
   div.courses .title,
   .txt-feed-back .title {
-    font-size: 60px; } }
-.courses,
-.feed-back {
-  margin-top: 50px; }
+    font-size: 60px; }
 
+  .card .thumbnail {
+    height: 150px; } }
 @media screen and (max-width: 414px) {
   .main-content {
     margin-top: -150px; }
@@ -404,11 +412,9 @@ span.other-course,
     left: 50%; } }
 @media screen and (max-width: 414px) {
   .lesson {
-    float: right; }
-    .lesson .icon {
-      margin-left: 0px;
-      font-size: 14px;
-      padding: 2px; }
+    display: inline-block;
+    width: 100%;
+    text-align: center; }
     .lesson p.text-lesson {
       font-size: 14px; }
 
@@ -473,8 +479,7 @@ span.other-course,
   .info .data {
     margin-left: 10px; }
     .info .data span {
-      display: block;
-      line-height: 30px; }
+      display: block; }
 
 .comment {
   position: relative; }
@@ -612,7 +617,7 @@ span.other-course,
 .footer {
   width: 100%;
   background-color: #505353;
-  padding: 50px 0;
+  padding: 50px;
   color: #ffffff; }
 
 .content-footer {
@@ -679,11 +684,19 @@ span.other-course,
       color: black; }
 
 @media only screen and (max-width: 768px) {
+  .footer {
+    padding: 50px 0; }
+
   .col-logo {
     order: 1; }
     .col-logo p {
-      margin-left: 0; } }
+      margin-left: 0; }
+    .col-logo img {
+      max-width: 100%; } }
 @media only screen and (max-width: 414px) {
+  .footer {
+    padding: 50px 0; }
+
   .col-logo {
     order: 2; }
     .col-logo img {
@@ -758,15 +771,19 @@ span.other-course,
   box-shadow: inset 0px 1.5px 2px #6f8710;
   border-radius: 22px;
   font-weight: bold; }
+  .btn-login:hover {
+    color: green; }
 
 .integrated-login {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 0 -30px; }
   .integrated-login::before, .integrated-login::after {
     content: "";
     flex: 1;
-    border-bottom: 1px solid #ccc; }
+    border-bottom: 1px solid #ccc;
+    margin-top: 0.25em; }
   .integrated-login::before {
     margin-right: 0.25em; }
   .integrated-login::after {
@@ -782,14 +799,20 @@ span.other-course,
   align-items: center;
   color: #ffffff;
   padding: 10px 0; }
+  .login-accout:hover {
+    cursor: pointer; }
   .login-accout span {
     margin-left: 10px; }
 
 .login-with-google {
   background-color: #DC4E41; }
+  .login-with-google:hover {
+    background-color: #cc3426; }
 
 .login-with-facebook {
   background-color: #3B5999; }
+  .login-with-facebook:hover {
+    background-color: #1b75bb; }
 
 @media only screen and (max-width: 768px) {
   .custom-modal {
@@ -805,8 +828,9 @@ span.other-course,
   height: 45px;
   padding: 5px;
   border-radius: 50%;
-  bottom: 10%;
-  right: 3%; }
+  bottom: 70px;
+  right: 70px;
+  font-family: "utm_bryantlgregular"; }
   .messenger img {
     width: 100%;
     height: 100%;
@@ -821,15 +845,17 @@ span.other-course,
   display: none;
   position: fixed;
   width: 360px;
-  bottom: 20%;
-  right: 3%;
+  bottom: 150px;
+  right: 70px;
   background-color: #ffffff;
   padding: 5px;
   box-shadow: 0px 0px 8px #ccc;
   border-radius: 23px; }
   .wrap-mess small {
     display: block;
-    padding: 0 25px; }
+    padding: 0 25px;
+    font-weight: 600;
+    color: #7F7F7F; }
 
 .content-mess {
   display: flex;
@@ -840,6 +866,7 @@ span.other-course,
     padding: 5px 15px;
     background-color: #F1F0F0;
     font-size: 12px;
+    font-weight: 600;
     line-height: 17px;
     border-radius: 15px;
     margin: 0 10px; }
@@ -872,7 +899,11 @@ span.other-course,
     margin: auto;
     background-color: #3184F7; }
     .login-mess .btn-login-mess span {
-      font-size: 12px; }
+      font-size: 12px;
+      font-weight: 600; }
+    .login-mess .btn-login-mess:hover {
+      background-color: #3B5999;
+      cursor: pointer; }
 
 .close-mess {
   position: absolute;
@@ -890,6 +921,13 @@ span.other-course,
 
 @media only screen and (max-width: 414px) {
   .wrap-mess {
-    width: 335px; } }
+    width: 335px; }
+
+  .messenger {
+    right: 15px; }
+
+  .wrap-mess {
+    bottom: 130px;
+    right: 15px; } }
 
 /*# sourceMappingURL=main.css.map */

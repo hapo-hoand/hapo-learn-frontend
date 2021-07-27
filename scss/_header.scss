@@ -7,6 +7,8 @@ body {
 }
 
 .navbar {
+  padding: 0 50px;
+
   button.btn-menu[aria-expanded="true"] > span.close {
     display: inline;
     color: black;
@@ -93,6 +95,7 @@ ul.menu {
 @media only screen and (max-width: 768px) {
   .navbar {
     display: flex;
+    padding: 0;
 
     .logo {
       display: block;
@@ -102,6 +105,10 @@ ul.menu {
 }
 
 @media only screen and (max-width: 414px) {
+  .navbar {
+    padding: 0;
+  }
+
   .header {
     padding: 0;
 
