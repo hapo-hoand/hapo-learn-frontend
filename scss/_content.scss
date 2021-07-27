@@ -1,6 +1,5 @@
 .main-content {
   margin-top: -70px;
-  font-family: $font_utm;
   }
 
 .card {
@@ -48,7 +47,8 @@
   }
 
   .card-title {
-    color: green;
+    color: $warning_color;
+    font-weight: bold;
   }
 
   a.link-course {
@@ -57,6 +57,13 @@
     padding-right: 20px;
     border-radius: 20px;
     background: $warning_color;
+    box-shadow: inset 0px 1.5px 2px $color_link_course;
+    font-weight: 600;
+
+    &:hover {
+      color: green;
+      cursor: pointer;
+    }
   }
 }
 
@@ -68,7 +75,7 @@ div.courses,
   .title {
     font-size: 80px;
     color: $blue_charcoal;
-    font-family: $font_san_serif;
+    text-shadow: 0 0 2px $blue_charcoal;
   }
 }
 
@@ -78,6 +85,21 @@ div.course-view {
   .view {
     margin-top: 50px;
     margin-bottom: 80px;
+
+    a {
+      position: relative;
+      font-size: 27px;
+      text-shadow: 2px 0px 2px #6f8710;
+      line-height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icon-arrow { 
+      margin-left: 10px;
+      margin-top: 10px;
+    }
   }
 }
 
@@ -91,6 +113,7 @@ span.other-course,
   span.line {
     width: auto;
     display: block;
+    background-color: $warning_color;
     border: 2px solid $warning_color;
     border-radius: 2px;
   }
@@ -106,6 +129,7 @@ span.other-course,
     
     &:hover {
       color: green;
+      text-shadow: 2px 0px 2px green;
 
       i.icon {
         color: green;
@@ -113,21 +137,33 @@ span.other-course,
     }
   }
 }
+
+.card-body {
+  p.card-text {
+    height: 100px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
   
+.courses, 
+.feed-back {
+  margin-top: 50px;
+}
+
 @media screen and (max-width: 768px) {
+  .card-body {
+    p.card-text {
+      height: 90px;
+    }
+  }
+
   .main-content {
     margin-top: -80px;
   }
 
-  .card-body {
-    p.card-text {
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical;
-    }
-  }
-  
   .col-courses {
     padding: 0 8px;
   }
@@ -146,11 +182,12 @@ span.other-course,
       font-size: 60px;
     }
   }
-}
 
-.courses, 
-.feed-back {
-  margin-top: 50px;
+  .card {
+    .thumbnail {
+      height: 150px;
+    }
+  }
 }
 
 @media screen and (max-width: 414px) {

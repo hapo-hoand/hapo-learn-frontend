@@ -6,8 +6,9 @@
   height: 45px;
   padding: 5px;
   border-radius: 50%;
-  bottom: 10%;
-  right: 3%;
+  bottom: 70px;
+  right: 70px;
+  font-family: $font_utm;
 
   img {
     @include style-img;
@@ -24,8 +25,8 @@
   display: none;
   position: fixed;
   width: 360px;
-  bottom: 20%;
-  right: 3%;
+  bottom: 150px;
+  right: 70px;
   background-color: $white_color;
   padding: 5px;
   box-shadow: 0px 0px 8px $color_box;
@@ -34,6 +35,8 @@
   small {
     display: block;
     padding: 0 25px;
+    font-weight: 600;
+    color: $color_small_mess;
   }
 }
 
@@ -48,6 +51,7 @@
       padding: 5px 15px;
       background-color: $bg_mess;
       font-size: 12px;
+      font-weight: 600;
       line-height: 17px;
       border-radius: 15px;
       margin: 0 10px;
@@ -100,6 +104,12 @@
 
     span {
       font-size: 12px;
+      font-weight: 600;
+    }
+
+    &:hover {
+      background-color: $color_face_book;
+      cursor: pointer;
     }
   }
 }
@@ -125,5 +135,14 @@
 @media only screen and (max-width: 414px) {
   .wrap-mess {
     width: 335px;
+  }
+
+  .messenger {
+    right: 15px;
+  }
+
+  .wrap-mess {
+    bottom: 130px;
+    right: 15px;
   }
 }

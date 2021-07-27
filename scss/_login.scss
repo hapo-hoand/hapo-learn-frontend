@@ -24,6 +24,7 @@
 
   .tab-item {
     padding: 0;
+    
     a {
       border: 0;
       font-size: 25px;
@@ -63,18 +64,24 @@
   box-shadow: inset 0px 1.5px 2px #6f8710;
   border-radius: 22px;
   font-weight: bold;
+
+  &:hover {
+    color: green;
+  }
 }
 
 .integrated-login {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 -30px;
 
   &::before,
   &::after {
     content: "";
     flex: 1;
     border-bottom: 1px solid $color_box;
+    margin-top: 0.25em;
   }
 
   &::before {
@@ -97,6 +104,10 @@
   color: $white_color;
   padding: 10px 0;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   span {
     margin-left: 10px;
   }
@@ -104,10 +115,17 @@
 
 .login-with-google {
   background-color: $color_google;
+
+  &:hover {
+    background-color: $color_hover_gg;
+  }
 }
 
 .login-with-facebook {
   background-color: $color_face_book;
+  &:hover {
+    background-color: $primary_color;
+  }
 }
 
 @media only screen and (max-width: 768px) {

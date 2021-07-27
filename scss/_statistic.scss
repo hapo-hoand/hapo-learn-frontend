@@ -4,7 +4,6 @@
 
 .content-statistic {
   text-align: center;
-  font-family: $font_utm;
 
   span {
     display: block;
@@ -15,6 +14,7 @@
 
   .title {
     font-weight: 700;
+    color: $color_footer;
   }
 
   .number {
