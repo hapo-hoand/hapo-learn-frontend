@@ -39,7 +39,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     -webkit-text-stroke-width: 1px;
-    border: 0 !important;
+    border-color: transparent !important;
     outline: 0 !important; }
 
 .btn-menu.rotate {
@@ -51,7 +51,7 @@ body {
 ul.menu li.nav-item {
   margin: 0; }
   ul.menu li.nav-item .nav-link {
-    border: 0 !important;
+    border-color: transparent !important;
     outline: 0 !important;
     border-radius: 20px;
     padding-left: 20px;
@@ -65,7 +65,7 @@ ul.menu .item-active {
   color: #ffffff;
   background-color: #b2d235; }
 
-.navbar-light .navbar-nav .item-active {
+ul.menu li.nav-item .item-active {
   color: #ffffff; }
 
 .top-content {
@@ -90,6 +90,20 @@ ul.menu .item-active {
 @media only screen and (max-width: 414px) {
   .navbar {
     padding: 0; }
+
+  ul.menu li.nav-item .nav-link {
+    font-size: 14px;
+    color: black;
+    background-color: #ffffff;
+    -webkit-text-stroke-width: 0px; }
+    ul.menu li.nav-item .nav-link:hover {
+      color: #b2d235;
+      background-color: #ffffff; }
+  ul.menu .item-active {
+    background-color: #ffffff; }
+
+  ul.menu li.nav-item .item-active {
+    color: #b2d235; }
 
   .header {
     padding: 0; }
@@ -255,7 +269,9 @@ div.content {
     color: #b2d235;
     font-weight: bold; }
   .card a.link-course {
+    color: #ffffff;
     border: 0 !important;
+    border-color: transparent !important;
     outline: 0 !important;
     padding-left: 20px;
     padding-right: 20px;
@@ -323,7 +339,9 @@ span.other-course,
   .title-feedback a.link-view {
     text-decoration: none;
     color: #90AB26;
-    font-size: 40px; }
+    font-size: 40px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
     span.other-course a.link-view .icon-arrow,
     .title-feedback a.link-view .icon-arrow {
       background-image: url("../public/img/arrow_right.png");
@@ -424,7 +442,7 @@ span.other-course,
         -ms-flex-align: end;
             align-items: flex-end; }
     .banner-why-hapolearn .img-laptop img {
-      height: 450px; }
+      height: 400px; }
   .banner-why-hapolearn .img-keyboard {
     width: 400px;
     height: 478px;
@@ -851,7 +869,7 @@ span.other-course,
     width: 35px;
     height: 35px; } }
 .custom-modal {
-  width: 30%;
+  max-width: 450px;
   position: relative;
   margin: 50px auto; }
 
@@ -972,20 +990,23 @@ span.other-course,
 
 .remenber,
 .forgot {
-  font-size: 16px; }
-
-.custom-checkbox {
-  width: 12px;
-  height: 12px;
-  margin-right: 3px; }
-
-.remenber {
+  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin: 0; }
+  .remenber label,
+  .forgot label {
+    cursor: pointer; }
+
+.custom-checkbox {
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+  cursor: pointer; }
 
 @media only screen and (max-width: 768px) {
   .custom-modal {
@@ -1002,8 +1023,6 @@ span.other-course,
     font-size: 14px; }
 
   .custom-checkbox {
-    width: 10px;
-    height: 10px;
     margin: 1px 3px 0 1px; } }
 .messenger {
   position: fixed;

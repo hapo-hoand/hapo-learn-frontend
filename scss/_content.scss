@@ -52,7 +52,9 @@
   }
 
   a.link-course {
+    color: $white_color;
     border: 0 !important;
+    border-color: transparent !important;
     outline: 0 !important;
     padding-left: 20px;
     padding-right: 20px;
@@ -129,7 +131,8 @@ span.other-course,
     text-decoration: none;
     color: #90AB26;
     font-size: 40px;
-    
+    transition: 0.4s;
+
     .icon-arrow {
       background-image: url("../public/img/arrow_right.png");
       width: 35px;
@@ -166,6 +169,7 @@ span.other-course,
       height: 90px;
     }
   }
+
   span.other-course {
     a.link-view {
       font-size: 28px;
