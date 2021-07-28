@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @font-face {
   font-family: "utm_bryantlgregular";
   src: url("../public/font/utm_bryantlg-webfont.woff2") format("woff2"),
@@ -33,6 +34,7 @@ $color_messenger: #2774DF;
 $font_utm: "utm_bryantlgregular";
 $font_san_serif: sans-serif;
 $font_ui: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font_open_san: 'Open Sans', sans-serif;
 
 @mixin text-banner-hapo {
   line-height: 60px;

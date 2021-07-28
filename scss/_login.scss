@@ -154,19 +154,63 @@
 .forgot {
   font-size: 20px;
   display: flex;
-  align-items: center;
+  align-items: center; 
+}
 
+.forgot {
   label {
-    cursor: pointer;
     margin: 0;
   }
 }
 
+.remenber {
+  label {
+    cursor: pointer;
+    margin-left: 15px;
+  }
+}
+
 .custom-checkbox {
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
+  position: relative;
   cursor: pointer;
+}
+
+.custom-checkbox:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: -4px;
+  border: 1px solid $gray_color;
+  background-color: $white_color;
+  border-radius: 3px;
+}
+
+.custom-checkbox:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -4px;
+  left: 0px;
+  background-color: $warning_color;
+  border-radius: 3px;
+}
+
+.custom-checkbox:checked:after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0px;
+  left: 7px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -198,5 +242,11 @@
     .custom-input-text {
       height: 40px;
     }  
+  }
+  
+  .remenber {
+    label {
+      margin-left: 10px;
+    }
   }
 }

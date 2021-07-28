@@ -2,6 +2,9 @@ $(".item-menu").click(function (e) {
   e.preventDefault();
   $(".item-menu").removeClass("item-active");
   $(this).addClass("item-active");
+  $(".btn-menu").attr("aria-expanded", "false")
+  $(".btn-menu").addClass("collapsed")
+  $(".custom-menu").removeClass("show")
 });
 
 $(".btn-menu").click(function () {
