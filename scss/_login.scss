@@ -182,10 +182,21 @@
 
   .remenber,
   .forgot {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .custom-checkbox {
     margin-right: 5px;
+  }
+
+  .register-content,
+  .login-content {
+    .custom-label {
+      font-size: 18px;
+    }
+
+    .custom-input-text {
+      height: 40px;
+    }  
   }
 }

@@ -477,7 +477,8 @@ span.other-course,
             align-items: flex-end;
     margin: 50px 0 0 0; }
     .banner-why-hapolearn .img-laptop img {
-      height: 80%; }
+      height: 80%;
+      margin-bottom: -30px; }
 
   .lesson-content.container {
     max-width: 100%; }
@@ -511,7 +512,13 @@ span.other-course,
   .banner-why-hapolearn {
     padding: 10px 0; }
     .banner-why-hapolearn .img-laptop {
-      margin: 0; }
+      margin: 0;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .banner-why-hapolearn .img-laptop img {
+        height: 100%;
+        margin-bottom: 10px; }
     .banner-why-hapolearn .img-keyboard {
       top: -20%; }
 
@@ -1028,10 +1035,17 @@ span.other-course,
 
   .remenber,
   .forgot {
-    font-size: 18px; }
+    font-size: 16px; }
 
   .custom-checkbox {
-    margin-right: 5px; } }
+    margin-right: 5px; }
+
+  .register-content .custom-label,
+  .login-content .custom-label {
+    font-size: 18px; }
+  .register-content .custom-input-text,
+  .login-content .custom-input-text {
+    height: 40px; } }
 .messenger {
   position: fixed;
   background-color: #2774DF;
