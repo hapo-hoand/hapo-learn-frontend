@@ -181,7 +181,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
+  left: -2px;
   top: -4px;
   border: 1px solid $gray_color;
   background-color: $white_color;
@@ -195,7 +195,7 @@
   width: 20px;
   height: 20px;
   top: -4px;
-  left: 0px;
+  left: -2px;
   background-color: $warning_color;
   border-radius: 3px;
 }
@@ -210,7 +210,7 @@
   transform: rotate(45deg);
   position: absolute;
   top: 0px;
-  left: 7px;
+  left: 5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -246,7 +246,7 @@
   
   .remenber {
     label {
-      margin-left: 10px;
+      margin-left: 5px;
     }
   }
 }

@@ -386,6 +386,10 @@ span.other-course,
       width: 30px;
       height: 20px; }
 
+  div.courses .title,
+  .txt-feed-back .title {
+    font-size: 50px; }
+
   .main-content {
     margin-top: -80px; }
 
@@ -430,7 +434,7 @@ span.other-course,
     height: 170px; }
 
   .card-body p.card-text {
-    height: 100px; } }
+    height: 95px; } }
 .banner-why-hapolearn {
   background-image: url("../public/img/banner_2.png");
   height: auto;
@@ -715,7 +719,7 @@ span.other-course,
   .content-learning {
     width: 100%; }
     .content-learning .big-text {
-      font-size: 30px;
+      font-size: 28px;
       line-height: 30px; }
     .content-learning span.text-time {
       font-size: 20px;
@@ -1052,7 +1056,7 @@ span.other-course,
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
+  left: -2px;
   top: -4px;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
@@ -1065,7 +1069,7 @@ span.other-course,
   width: 20px;
   height: 20px;
   top: -4px;
-  left: 0px;
+  left: -2px;
   background-color: #b2d235;
   border-radius: 3px; }
 
@@ -1080,7 +1084,7 @@ span.other-course,
           transform: rotate(45deg);
   position: absolute;
   top: 0px;
-  left: 7px; }
+  left: 5px; }
 
 @media only screen and (max-width: 768px) {
   .custom-modal {
@@ -1104,7 +1108,7 @@ span.other-course,
     height: 40px; }
 
   .remenber label {
-    margin-left: 10px; } }
+    margin-left: 5px; } }
 .messenger {
   position: fixed;
   background-color: #2774DF;

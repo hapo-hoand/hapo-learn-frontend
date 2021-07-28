@@ -183,6 +183,13 @@ span.other-course,
     }
   }
 
+  div.courses,
+  .txt-feed-back {
+    .title {
+      font-size: 50px;
+    }
+  }
+
   .main-content {
     margin-top: -80px;
   }
@@ -256,7 +263,7 @@ span.other-course,
 
   .card-body {
     p.card-text {
-      height: 100px;
+      height: 95px;
     }
   }
 }
