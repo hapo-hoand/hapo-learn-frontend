@@ -98,6 +98,10 @@ ul.menu li.nav-item .item-active {
 }
 
 @media only screen and (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+
   .navbar {
     display: flex;
     padding: 0;
@@ -110,6 +114,10 @@ ul.menu li.nav-item .item-active {
 }
 
 @media only screen and (max-width: 414px) {
+  .header {
+    position: fixed;
+  }
+  
   .navbar {
     padding: 0;
   }

@@ -87,6 +87,10 @@ div.content {
       line-height: 35px;
     }
 
+    span.text-add {
+      font-weight: normal;
+    }
+
     span.text-time {
       padding: 7px 33px;
       font-size: 16px;
@@ -102,7 +106,7 @@ div.content {
   }
 
   .banner-hapo-learn {
-    margin-top: 165px;
+    margin-top: 0;
 
     .bg-img {
       width: 100%;
