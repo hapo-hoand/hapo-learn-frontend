@@ -1,5 +1,4 @@
 .custom-modal {
-  max-width: 450px;
   position: relative;
   margin: 50px auto;
 }
@@ -46,6 +45,14 @@
 .register-content,
 .login-content {
   padding: 30px;
+
+  .custom-label {
+    font-size: 20px;
+  }
+
+  .custom-input-text {
+    height: 60px;
+  }  
 }
 
 .forgot {
@@ -62,6 +69,7 @@
   color: $white_color;
   padding: 10px 0;
   width: 50%;
+  font-size: 18px;
   box-shadow: inset 0px 1.5px 2px #6f8710;
   border-radius: 22px;
   font-weight: bold;
@@ -79,6 +87,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 -30px;
+  font-size: 20px;
 
   &::before,
   &::after {
@@ -118,6 +127,13 @@
   }
 }
 
+.login-with-google,
+.login-with-facebook {
+  span {
+    font-size: 20px;
+  }
+}
+
 .login-with-google {
   background-color: $color_google;
 
@@ -136,43 +152,40 @@
 
 .remenber,
 .forgot {
-  font-size: 16px;
+  font-size: 20px;
   display: flex;
   align-items: center;
-  margin: 0;
 
   label {
     cursor: pointer;
+    margin: 0;
   }
 }
 
 .custom-checkbox {
-  width: 12px;
-  height: 12px;
-  margin-right: 3px;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
   .custom-modal {
-    width: 50%;
+    width: 60%;
   }
 }
 
 @media only screen and (max-width: 414px) {
-  .tab-list .tab-item a {
-    font-size: 20px;
-  }
   .custom-modal {
-    width: 80%;
+    width: 90%;
   }
 
   .remenber,
   .forgot {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .custom-checkbox {
-    margin: 1px 3px 0 1px;
+    margin-right: 5px;
   }
 }

@@ -24,8 +24,8 @@
   z-index: 50;
   display: none;
   position: fixed;
-  width: 320px;
-  bottom: 150px;
+  width: 360px;
+  bottom: 130px;
   right: 70px;
   background-color: $white_color;
   padding: 5px;
@@ -43,12 +43,12 @@
 .content-mess {
   display: flex;
   align-items: flex-end;
-  margin: 10px 0;
+  margin: 10px;
 
   .detail {
     span {
       display: inline-block;
-      padding: 5px 15px;
+      padding: 5px 30px 5px 15px;
       background-color: $bg_mess;
       font-size: 12px;
       font-weight: 600;
@@ -97,9 +97,9 @@
   margin: 20px 20px;
 
   .btn-login-mess {
-    width: 90%;
+    padding: 10px;
+    margin: 5px 20px;
     border-radius: 10px;
-    margin: auto;
     background-color: $color_btn;
 
     span {

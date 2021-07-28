@@ -869,7 +869,6 @@ span.other-course,
     width: 35px;
     height: 35px; } }
 .custom-modal {
-  max-width: 450px;
   position: relative;
   margin: 50px auto; }
 
@@ -907,6 +906,12 @@ span.other-course,
 .register-content,
 .login-content {
   padding: 30px; }
+  .register-content .custom-label,
+  .login-content .custom-label {
+    font-size: 20px; }
+  .register-content .custom-input-text,
+  .login-content .custom-input-text {
+    height: 60px; }
 
 .forgot {
   display: -webkit-box;
@@ -923,6 +928,7 @@ span.other-course,
   color: #ffffff;
   padding: 10px 0;
   width: 50%;
+  font-size: 18px;
   -webkit-box-shadow: inset 0px 1.5px 2px #6f8710;
           box-shadow: inset 0px 1.5px 2px #6f8710;
   border-radius: 22px;
@@ -943,7 +949,8 @@ span.other-course,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 -30px; }
+  margin: 0 -30px;
+  font-size: 20px; }
   .integrated-login::before, .integrated-login::after {
     content: "";
     -webkit-box-flex: 1;
@@ -978,6 +985,10 @@ span.other-course,
   .login-accout span {
     margin-left: 10px; }
 
+.login-with-google span,
+.login-with-facebook span {
+  font-size: 20px; }
+
 .login-with-google {
   background-color: #DC4E41; }
   .login-with-google:hover {
@@ -990,40 +1001,37 @@ span.other-course,
 
 .remenber,
 .forgot {
-  font-size: 16px;
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin: 0; }
+          align-items: center; }
   .remenber label,
   .forgot label {
-    cursor: pointer; }
+    cursor: pointer;
+    margin: 0; }
 
 .custom-checkbox {
-  width: 12px;
-  height: 12px;
-  margin-right: 3px;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
   cursor: pointer; }
 
 @media only screen and (max-width: 768px) {
   .custom-modal {
-    width: 50%; } }
+    width: 60%; } }
 @media only screen and (max-width: 414px) {
-  .tab-list .tab-item a {
-    font-size: 20px; }
-
   .custom-modal {
-    width: 80%; }
+    width: 90%; }
 
   .remenber,
   .forgot {
-    font-size: 14px; }
+    font-size: 18px; }
 
   .custom-checkbox {
-    margin: 1px 3px 0 1px; } }
+    margin-right: 5px; } }
 .messenger {
   position: fixed;
   background-color: #2774DF;
@@ -1049,8 +1057,8 @@ span.other-course,
   z-index: 50;
   display: none;
   position: fixed;
-  width: 320px;
-  bottom: 150px;
+  width: 360px;
+  bottom: 130px;
   right: 70px;
   background-color: #ffffff;
   padding: 5px;
@@ -1070,10 +1078,10 @@ span.other-course,
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 10px 0; }
+  margin: 10px; }
   .content-mess .detail span {
     display: inline-block;
-    padding: 5px 15px;
+    padding: 5px 30px 5px 15px;
     background-color: #F1F0F0;
     font-size: 12px;
     font-weight: 600;
@@ -1114,9 +1122,9 @@ span.other-course,
   display: block;
   margin: 20px 20px; }
   .login-mess .btn-login-mess {
-    width: 90%;
+    padding: 10px;
+    margin: 5px 20px;
     border-radius: 10px;
-    margin: auto;
     background-color: #3184F7; }
     .login-mess .btn-login-mess span {
       font-size: 12px;
