@@ -427,7 +427,10 @@ span.other-course,
     font-size: 50px; }
 
   .card .thumbnail {
-    height: 170px; } }
+    height: 170px; }
+
+  .card-body p.card-text {
+    height: 100px; } }
 .banner-why-hapolearn {
   background-image: url("../public/img/banner_2.png");
   height: auto;
