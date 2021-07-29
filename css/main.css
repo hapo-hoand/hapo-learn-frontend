@@ -446,10 +446,11 @@ span.other-course,
   background-repeat: no-repeat; }
   .banner-why-hapolearn .img-keyboard img,
   .banner-why-hapolearn .img-laptop img {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    }
   .banner-why-hapolearn .img-laptop {
     width: 100%;
     height: 500px;
@@ -460,7 +461,9 @@ span.other-course,
         -ms-flex-align: end;
             align-items: flex-end; }
     .banner-why-hapolearn .img-laptop img {
-      height: 400px; }
+      min-width: 2;
+      height: 400px;
+      }
   .banner-why-hapolearn .img-keyboard {
     width: 400px;
     height: 478px;
@@ -803,6 +806,7 @@ span.other-course,
       -ms-flex-order: 1;
           order: 1; }
   .col-logo img {
+    width: 100%;
     max-width: 350px; }
   .col-logo p {
     margin-left: 70px;
