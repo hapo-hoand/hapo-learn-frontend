@@ -416,7 +416,7 @@ span.other-course,
     padding: 0 4px; }
 
   .card {
-    margin: 30px; }
+    margin: 30px 60px; }
 
   span.other-course a.link-view {
     font-size: 25px; }
@@ -428,7 +428,7 @@ span.other-course,
 
   div.courses .title,
   .txt-feed-back .title {
-    font-size: 50px; }
+    font-size: 40px; }
 
   .card .thumbnail {
     height: 170px; }
